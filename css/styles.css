@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&family=Roboto:wght@500&family=Ubuntu+Condensed&display=swap');
+/* HOW TO USE FONT
+font-family: 'Lato',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;
+font-family: 'Ubuntu Condensed',
+sans-serif; 
+*/
+
+/* RESET */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL STYLING */
+body {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+/* NAVBAR STYLING */
+.container {
+  margin: auto;
+  max-width: 80%;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar-item {
+  display: flex;
+
+}
+
+#navbar-item li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+#navbar-item li a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #4070F4;
+  font-size: 18px;
+}
+
+/* MAIN SECTION STYLING */
+#main-section {
+  background: url(/assets/portfolio1.jpg);
+  line-height: 2;
+  min-height: 500px;
+  position: relative;
+}
+
+#main-brief-desc {
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 140px;
+  color: #ffffff;
+}
+
+#main-brief-desc h4 {
+  margin-bottom: 40px;
+}
+
+#main-brief-desc #main-section-about {
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+  color: #4070F4;
+  font-weight: bold;
+  background-color: white;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+#main-brief-desc #social-media {
+  margin-top: 80px;
+}
+
+#main-brief-desc #social-media a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ABOUT SECTION STYLING */
+#about-me-section #about-brief-desc {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#about-olamilekan {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #4070F4;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#about-brief-desc #my-picture img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%;
+}
+
+#about-brief-desc #my-info {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+#about-brief-desc #my-info span {
+  color: #4070F4;
+}
+
+#about-brief-desc #my-info .about {
+  margin-top: 50px;
+}
+
+/* CONTACT/FOOTER STYLING */
+#contact {
+  background-color: #0e2431;
+}
+
+#newsletter {
+  margin: auto;
+  max-width: 50%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+#newsletter h1 {
+  padding-top: 10px;
+}
+
+#newsletter form input {
+  margin: 12px 0;
+  padding: 9px;
+  border: none;
+  font-weight: bold;
+}
+
+#newsletter form input:focus {
+  outline: none;
+}
+
+#contact #contact-social-media {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#contact #contact-social-media a {
+  color: #ffffff;
+  padding: 15px;
+  font-size: 20px;
+}
+
+#contact p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  padding-top: 20px;
+}
