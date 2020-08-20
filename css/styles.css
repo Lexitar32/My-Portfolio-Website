@@ -68,7 +68,7 @@ header {
   position: absolute;
   margin-top: 70px;
   margin-left: 140px;
-  color: #ffffff;
+  color: #ccc;
 }
 
 #main-brief-desc h4 {
@@ -115,6 +115,7 @@ header {
   max-width: 300px;
   max-height: 300px;
   border-radius: 50%;
+  margin-right: 40px;
 }
 
 #about-brief-desc #my-info {
@@ -130,8 +131,56 @@ header {
   margin-top: 50px;
 }
 
-/* CONTACT/FOOTER STYLING */
+/* CONTACT SECTION STYLING */
 #contact {
+  text-align: center;
+  background: #ccc;
+  margin-bottom: 10px;
+}
+
+#contact h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+#contact form .form-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+  width: 20%;
+}
+
+#contact form .form-flex label {
+  font-family: 'Lato', sans-serif;
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+
+#contact form .form-flex input {
+  padding: 10px;
+}
+
+#contact form .form-flex input:focus,
+#contact form .form-flex textarea:focus {
+  outline: none;
+}
+
+#contact form .form-flex3 {
+  margin-bottom: 0;
+}
+
+#contact form button {
+  margin-bottom: 20px;
+  padding: 8px 30px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+}
+
+#contact form button:focus {
+  outline: none;
+}
+
+/* FOOTER STYLING */
+#subscribe {
   background-color: #ccc;
 }
 
@@ -158,20 +207,32 @@ header {
   outline: none;
 }
 
-#contact #contact-social-media {
+#subscribe #subscribe-social-media {
   text-align: center;
   margin-top: 15px;
 }
 
-#contact #contact-social-media a {
+#subscribe #subscribe-social-media a {
   color: #000000;
   padding: 15px;
   font-size: 20px;
 }
 
-#contact p {
+#subscribe p {
   text-align: center;
   color: #000000;
   font-size: 16px;
   padding-top: 20px;
+}
+
+/* RESPONSIVENESS */
+@media(max-width:1024px) {
+
+  /* ABOUT STYLING */
+  #about-me-section #about-brief-desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: 50%;
+  }
 }
