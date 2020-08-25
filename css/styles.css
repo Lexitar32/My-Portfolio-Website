@@ -65,7 +65,7 @@ header {
 #showcase-menu {
   background: url(/assets/portfolio1.jpg);
   line-height: 2;
-  min-height: 500px;
+  min-height: 450px;
   position: relative;
 }
 
@@ -102,6 +102,93 @@ header {
   font-weight: bold;
 }
 
+/* SERVICES SECTION STYLING*/
+#services h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#services .services-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#services .services-flex .service {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 20px;
+}
+
+.services-flex .service i {
+  font-size: 26px;
+  margin: 15px;
+  color: #4070F4;
+}
+
+.services-flex .service h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #4070F4;
+}
+
+.services-flex .service p {
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+/* SKILLS AND STATS STYLING */
+#stats-skills .stats-skills-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-skills-flex .stats {
+  text-align: center;
+  margin: 20px;
+}
+
+.stats-skills-flex .stats h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #4070F4;
+}
+
+.stats-skills-flex .stats p {
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.stats-skills-flex .stats span {
+  color: #4070F4;
+}
+
+.stats-skills-flex .skills {
+  text-align: center;
+  margin: 20px;
+}
+
+.stats-skills-flex .skills h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #4070F4;
+}
+
+.stats-skills-flex .skills p {
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.stats-skills-flex .skills span {
+  color: #4070F4;
+}
+
 /* ABOUT SECTION STYLING */
 #about-me-header {
   font-family: 'Lato', sans-serif;
@@ -112,8 +199,8 @@ header {
 }
 
 #about-me-content {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 #about-me-picture img {
@@ -124,11 +211,12 @@ header {
 }
 
 #about-me-desc {
-  font-size: 22px;
   line-height: 1.6;
 }
 
 #about-me-desc .about {
+  font-size: 20px;
+  line-height: 1.4;
   margin-top: 50px;
 }
 
@@ -136,8 +224,39 @@ header {
   color: #4070F4;
 }
 
+/* TESTIMONIAL SECTION STYLING */
+#testimonial h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #000000;
+  font-size: 24px;
+  margin-top: 30px;
+}
+
+#testimonial .testimonial-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.testimonial-flex .testimonials {
+  text-align: center;
+  margin: 15px;
+}
+
+.testimonial-flex .testimonials h2 {
+  font-family: 'Lato', sans-serif;
+  color: #4070F4;
+}
+
+.testimonial-flex .testimonials p {
+  margin-top: 5px;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
 /* PROJECT SECTION STYLING */
-#projects h2 {
+#projects h1 {
   font-family: 'Lato', sans-serif;
   margin-top: 20px;
   text-align: center;
