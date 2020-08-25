@@ -18,8 +18,13 @@ sans-serif;
 }
 
 /* GLOBAL STYLING */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Ubuntu Condensed', sans-serif;
+  height: 100vh;
 }
 
 /* NAVBAR STYLING */
@@ -57,25 +62,25 @@ header {
 }
 
 /* MAIN SECTION STYLING */
-#main-section {
+#showcase-menu {
   background: url(/assets/portfolio1.jpg);
   line-height: 2;
   min-height: 500px;
   position: relative;
 }
 
-#main-brief-desc {
+#showcase-menu-content {
   position: absolute;
   margin-top: 70px;
   margin-left: 140px;
   color: #ccc;
 }
 
-#main-brief-desc h4 {
+#showcase-menu-content h4 {
   margin-bottom: 40px;
 }
 
-#main-brief-desc #main-section-about {
+#showcase-menu-about {
   font-family: 'Lato', sans-serif;
   text-decoration: none;
   color: #000000;
@@ -85,11 +90,11 @@ header {
   border-radius: 5px;
 }
 
-#main-brief-desc #social-media {
+#showcase-menu-social {
   margin-top: 80px;
 }
 
-#main-brief-desc #social-media a {
+#showcase-menu-social a {
   text-decoration: none;
   color: #ffffff;
   padding: 15px;
@@ -98,12 +103,7 @@ header {
 }
 
 /* ABOUT SECTION STYLING */
-#about-me-section #about-brief-desc {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-}
-
-#about-olamilekan {
+#about-me-header {
   font-family: 'Lato', sans-serif;
   text-align: center;
   color: #000000;
@@ -111,35 +111,115 @@ header {
   margin-top: 20px;
 }
 
-#about-brief-desc #my-picture img {
+#about-me-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#about-me-picture img {
   max-width: 300px;
   max-height: 300px;
   border-radius: 50%;
   margin-right: 40px;
 }
 
-#about-brief-desc #my-info {
+#about-me-desc {
   font-size: 22px;
   line-height: 1.6;
 }
 
-#about-brief-desc #my-info span {
+#about-me-desc .about {
+  margin-top: 50px;
+}
+
+#about-me-desc span {
   color: #4070F4;
 }
 
-#about-brief-desc #my-info .about {
-  margin-top: 50px;
+/* PROJECT SECTION STYLING */
+#projects h2 {
+  font-family: 'Lato', sans-serif;
+  margin-top: 20px;
+  text-align: center;
 }
+
+#projects .projects-grid {
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.projects-grid .project-1 img {
+  max-height: 400px;
+}
+
+.projects-grid .project-1 a {
+  padding: 5px;
+  color: #000000;
+  font-size: 22px;
+}
+
+.projects-grid .project-2 img {
+  max-height: 400px;
+}
+
+.projects-grid .project-2 a {
+  padding: 5px;
+  color: #000000;
+  font-size: 22px;
+}
+
+.projects-grid .project-3 img {
+  max-height: 400px;
+}
+
+.projects-grid .project-3 a {
+  padding: 5px;
+  color: #000000;
+  font-size: 22px;
+}
+
+.projects-grid .project-4 img {
+  max-height: 400px;
+}
+
+.projects-grid .project-4 a {
+  padding: 5px;
+  color: #000000;
+  font-size: 22px;
+}
+
+.projects-grid .project-5 img {
+  max-height: 400px;
+}
+
+.projects-grid .project-5 a {
+  padding: 5px;
+  color: #000000;
+  font-size: 22px;
+}
+
+.projects-grid .project-6 img {
+  max-height: 400px;
+}
+
+.projects-grid .project-6 a {
+  padding: 5px;
+  color: #000000;
+  font-size: 22px;
+}
+
 
 /* CONTACT SECTION STYLING */
 #contact {
   text-align: center;
-  background: #ccc;
   margin-bottom: 10px;
 }
 
 #contact h2 {
   font-family: 'Lato', sans-serif;
+  margin-top: 20px;
 }
 
 #contact form .form-flex {
@@ -180,7 +260,7 @@ header {
 }
 
 /* FOOTER STYLING */
-#subscribe {
+footer {
   background-color: #ccc;
 }
 
@@ -207,32 +287,21 @@ header {
   outline: none;
 }
 
-#subscribe #subscribe-social-media {
+footer #footer-social-media {
   text-align: center;
   margin-top: 15px;
 }
 
-#subscribe #subscribe-social-media a {
+footer #footer-social-media a {
   color: #000000;
   padding: 15px;
   font-size: 20px;
 }
 
-#subscribe p {
+footer p {
   text-align: center;
   color: #000000;
   font-size: 16px;
   padding-top: 20px;
-}
-
-/* RESPONSIVENESS */
-@media(max-width:1024px) {
-
-  /* ABOUT STYLING */
-  #about-me-section #about-brief-desc {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: auto;
-    width: 50%;
-  }
+  padding-bottom: 20px;
 }

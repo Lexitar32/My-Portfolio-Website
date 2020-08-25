@@ -6,12 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="This is Arimoro Olamilekan portfolio website that was built with HTML and CSS">
-  <title>Arimoro Olamilekan | Home</title>
+  <title>Arimoro Olamilekan | Contact</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 
 <body>
   <!-- NAVBAR SECTION -->
@@ -30,46 +29,27 @@
     </div>
   </header>
 
-  <!-- MAIN SECTION -->
-  <main id="main-section">
-    <section id="showcase-menu">
-      <div id="showcase-menu-content">
-        <h1>Hello,</h1>
-        <h1>I am Arimoro Olamilekan Ezekiel</h1>
-        <h4>A solution driven Front-End Developer with application of technology to solve real life problems.</h4>
-        <a href="#about-me" id="showcase-menu-about">About me</a>
-        <!-- SOCIAL MEDIA ICONS -->
-        <div id="showcase-menu-social">
-          <a href="https://github.com/Lexitar32" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/arimoroolamilekan/" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://twitter.com/ArimoroOlamile5" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/arimoro_olamilekan/" target="_blank"><i class="fab fa-instagram"></i></a>
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="name" name="form" netlify>
+        <div class="form-flex">
+          <label>Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter Full Name">
         </div>
-      </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section id="about-me">
-      <div class="container">
-        <h1 id="about-me-header">About Me</h1>
-        <div id="about-me-content">
-          <div id="about-me-picture">
-            <img src="./assets/Olamilekan.jpg" alt="My Picture">
-          </div>
-          <div id="about-me-desc">
-            <p class="about"><span>Olamilekan is a solution driven developer</span> that believes in technology being
-              the powerful weapon that will rule the world. I am always eager to use my tech skills to
-              build projects that will provide solution to humanity.
-            </p> <br>
-            <p class="skills">
-              I am a <span>Front-End Developer</span> with good knowledge of <span>HTML, CSS, SASS, Bootstrap and
-                JavaScript</span> with projects to show my good understanding of these technologies.
-            </p>
-          </div>
+        <div class="form-flex">
+          <label>Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Email Address">
         </div>
-      </div>
-    </section>
-  </main>
+        <div class="form-flex">
+          <label>Send a message</label>
+          <textarea name="message" id="message" cols="30" rows="5"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
 
   <!-- FOOTER SECTION -->
   <footer>
@@ -90,7 +70,6 @@
       <p>Built by Arimoro Olamilekan Ezekiel &copy; 2020.</p>
     </div>
   </footer>
-
 </body>
 
 </html>
