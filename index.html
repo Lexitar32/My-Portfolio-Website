@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="This is Arimoro Olamilekan portfolio website that was built with HTML and CSS">
-  <title>Arimoro Olamilekan | Contact</title>
+  <title>Arimoro Olamilekan | Home</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/all.min.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -14,19 +14,219 @@
 
 <!-- NAVBAR SECTION -->
 <header>
-  <div class="container">
-    <nav id="navbar">
-      <div id="my-logo"><img src="./assets/logo.png" alt="My Logo"></div>
-      <ul id="navbar-item">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./project.html">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
+  <nav id="navbar">
+    <div class="navbar-container">
+      <!-- MY LOGO -->
+      <div id="logo"><img src="./assets/logo.png" alt="My Logo"></div>
+      <!-- NAVBAR ITEMS -->
+      <div class="nav-item">
+        <ul>
+          <li><a class="nav-link-active" href="./index.html">Home</a></li>
+          <li><a class="nav-link" href="./about.html">About</a></li>
+          <li><a class="nav-link" href="./project.html">Projects</a></li>
+          <li><a class="nav-link" href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </header>
+
+<!-- SHOWCASE SECTION -->
+<main class="showcase">
+  <!-- SHOWCASE CONTENT SECTION -->
+  <div class="showcase-content">
+    <h1>Hi, I am Arimoro Olamilekan</h1>
+    <p>A solution driven software developer</p>
+  </div>
+</main>
+
+<!-- WHAT I DO SECTION -->
+<section class="services">
+  <div class="container">
+    <h1 class="services-header"><i class="fab fa-servicestack"></i> My Services</h1>
+    <div class="service-grid">
+      <div class="web-dev">
+        <i class="fas fa-code"></i>
+        <h1>Website Development</h1>
+        <p>Design and Development of small and large scale website
+          to serve different purposes and in short provide solution to
+          mankind.
+        </p>
+      </div>
+      <div class="web-hosting">
+        <i class="fab fa-chrome"></i>
+        <h1>Website Hosting and Maintenance</h1>
+        <p>Hosting of already built website with a reliable hosting company
+          and maintenance of websites in case of emergency issues or complains
+          from customers.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS AND CERT SECTION -->
+<section class="stats-cert">
+  <div class="container">
+    <h1 class="stat"><i class="fas fa-certificate"></i> My Achievements</h1>
+    <div class="stats-grid">
+      <div class="cert">
+        <h2>My Certificates</h2>
+        <ul>
+          <li><i class="fab fa-html5"></i> Introduction to HTML5</li>
+          <li><i class="fab fa-html5"></i> HTML5-Basics to Advanced</li>
+          <li><i class="fab fa-css3"></i> Learn Advanced CSS3</li>
+          <li><i class="fab fa-bootstrap"></i> CSS3 and Bootstrap for Beginners</li>
+        </ul>
+      </div>
+      <div class="works">
+        <h2>Completed Works</h2>
+        <ul>
+          <li><i class="fas fa-check"></i> 10 Joint Projects</li>
+          <li><i class="fas fa-check"></i> 4 Personal Projects</li>
+          <li><i class="fas fa-check"></i> 4 Hosted Projects</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section class="skills">
+  <div class="container">
+    <h1><i class="fas fa-tools"></i> My Skills</h1>
+    <div class="skills-grid">
+      <div class="html">
+        <span><i class="fab fa-html5"></i> HTML5</span>
+        <progress max="100" value="80"></progress>
+      </div>
+      <div class="html">
+        <span><i class="fab fa-css3"></i> CSS3</span>
+        <progress max="100" value="60"></progress>
+      </div>
+      <div class="html">
+        <span><i class="fab fa-sass"></i> Sass</span>
+        <progress max="100" value="70"></progress>
+      </div>
+      <div class="html">
+        <span><i class="fab fa-bootstrap"></i> Bootstrap</span>
+        <progress max="100" value="90"></progress>
+      </div>
+      <div class="html">
+        <span><i class="fab fa-github"></i> Git & GitHub</span>
+        <progress max="100" value="60"></progress>
+      </div>
+      <div class="html">
+        <span><i class="fab fa-js"></i> JavaScript</span>
+        <progress max="100" value="20"></progress>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIES SECTION -->
+<section class="testimonies">
+  <div class="container">
+    <h1>Testimonies</h1>
+    <div class="testimonies-grid">
+      <div class="test">
+        <img src="./assets/ezekiel's.jpg" alt="Testimony">
+        <h2>Arimoro Olayinka</h2>
+        <p>Data Scientist</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          quod, qui, similique enim eligendi deserunt
+          provident beatae fugit exercitationem excepturi repellendus,
+          vero perferendis quae laborum aliquid ratione porro
+          autem ipsum.</p>
+      </div>
+      <div class="test">
+        <img src="./assets/ezekiel's.jpg" alt="Testimony">
+        <h2>Arimoro Olamilekan</h2>
+        <p>Software Developer</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          quod, qui, similique enim eligendi deserunt
+          provident beatae fugit exercitationem excepturi repellendus,
+          vero perferendis quae laborum aliquid ratione porro
+          autem ipsum.</p>
+      </div>
+      <div class="test">
+        <img src="./assets/ezekiel's.jpg" alt="Testimony">
+        <h2>Arimoro Olamilekan</h2>
+        <p>Graphics Designer</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          quod, qui, similique enim eligendi deserunt
+          provident beatae fugit exercitationem excepturi repellendus,
+          vero perferendis quae laborum aliquid ratione porro
+          autem ipsum.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEMORIES GRID SECTION -->
+<section class="memories">
+  <div class="container">
+    <h1>Moments</h1>
+    <div class="memories-grid">
+      <div>
+        <img src="./assets/moment-1.jpg" alt="Moment image">
+      </div>
+      <div>
+        <img src="./assets/moment-2.jpg" alt="Moment image">
+      </div>
+      <div>
+        <img src="./assets/moment-3.jpg" alt="Moment image">
+      </div>
+      <div>
+        <img src="./assets/moment-4.jpg" alt="Moment image">
+      </div>
+      <div>
+        <img src="./assets/moment-5.jpg" alt="Moment image">
+      </div>
+      <div>
+        <img src="./assets/moment-6.jpg" alt="Moment image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="message">
+        <h2>Message Me</h2>
+        <div>
+          <i class="fas fa-phone"></i> 0708 215 8660
+        </div>
+        <div>
+          <i class="fas fa-mail-bulk"></i> arimoroolamilekan1@gmail.com
+        </div>
+        <div class="social-icon">
+          <span>
+            <a href="https://www.linkedin.com/in/arimoroolamilekan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/arimoro_olamilekan/?hl=en" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/ArimoroOlamile5" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/Lexitar32" target="_blank"><i class="fab fa-github"></i></a>
+          </span>
+        </div>
+      </div>
+      <div class="subscribe">
+        <form name="name" netlify>
+          <h2>Subscribe to my newsletter</h2>
+          <input type="email" name="email" placeholder="Your Email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <p class="copyright">Arimoro Olamilekan Ezekiel &copy; 2020.</p>
+  </div>
+</footer>
 
 </body>
 
