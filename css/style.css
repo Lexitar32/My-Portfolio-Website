@@ -26,6 +26,7 @@ font-family: 'Roboto Condensed', sans-serif; */
 /* SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
+  height: 100vh;
 }
 
 /* HOME SECTION STYLING*/
@@ -96,7 +97,7 @@ header {
   align-items: center;
   margin: 0 auto;
   height: 30%;
-  padding: 30vh;
+  padding-top: 200px;
 }
 
 .showcase .showcase-content h1 {
@@ -293,6 +294,7 @@ header {
   color: #0e2431;
   text-align: center;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .memories .memories-grid {
@@ -465,7 +467,7 @@ footer .copyright {
 /* CONTACT FORM STYLING */
 .contact-me {
   background: url(../assets/contact-bg.jpg) no-repeat center center/cover;
-  height: 70vh;
+  height: 100%;
 }
 
 .contact-me h2 {
@@ -498,9 +500,207 @@ footer .copyright {
   padding: 6px;
   width: 100px;
   padding-top: 8px;
+  margin-bottom: 20px;
 }
 
 .contact-me form button:hover {
   background-color: var(--bg-color);
   color: var(--text-color);
+}
+
+/* RESPONSIVENESS */
+/* I-PAD PRO*/
+@media(max-width:1024px) {
+
+  /* HOME STYLING */
+  /* NAVBAR STYLING */
+  #navbar .navbar-container .nav-item a {
+    padding: 35px;
+  }
+
+  /* SHOWCASE STYLING */
+  .showcase {
+    background: url(../assets/showcase.jpg) no-repeat center center/cover;
+    height: 40vh;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  /* MEMORIES GRID STYLING */
+  .memories .memories-grid {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  /* ABOUT STYLING */
+  .about-me .about-me-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px auto;
+    max-width: 80%;
+  }
+}
+
+@media(max-width:900px) {
+  .memories .memories-grid img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
+
+/* I-PAD SCREEN */
+@media (max-width:768px) {
+
+  /* HOME STYLING */
+  /* SHOWCASE STYLING */
+  .showcase .showcase-content {
+    padding-top: 120px;
+  }
+
+  .memories .memories-grid img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  /* ABOUT STYLING */
+  .about-me .about-me-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px auto;
+    max-width: 100%;
+  }
+
+  .about-me .about-me-grid .my-image {
+    margin-top: 20px;
+  }
+
+  /* PROJECTS SECTION */
+  .my-works .project .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    border: 1px solid #0e2431;
+    margin: 25px;
+    padding: 30px;
+    border-radius: 15px;
+  }
+
+  .my-works .project .project-grid .project-image img {
+    max-width: 100%;
+  }
+}
+
+/* MOBILE VIEW */
+@media (max-width:420px) {
+
+  /* HOME STYLING */
+  /* NAVBAR STYLING */
+  #navbar .navbar-container .nav-item a {
+    padding: 5px;
+  }
+
+  /* SHOWCASE STYLING */
+  .showcase .showcase-content {
+    padding-top: 70px;
+  }
+
+  .showcase .showcase-content h1 {
+    font-size: 28px;
+  }
+
+  .showcase .showcase-content p {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  /* SERVICES STYLING */
+  .services .services-header {
+    font-size: 22px;
+  }
+
+  .services .service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .services .service-grid h1 {
+    font-size: 22px;
+  }
+
+  /* STATS & CERT STYLING */
+  .stats-cert h1 {
+    font-size: 22px;
+  }
+
+  .stats-cert .stats-grid h2 {
+    font-size: 22px;
+  }
+
+  .stats-cert .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* SKILLS STYLING */
+  .skills h1 {
+    font-size: 22px;
+  }
+
+  .skills .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .skills .skills-grid .html {
+    padding: 10px;
+  }
+
+  /* TESTIMONIES STYLING */
+  .testimonies .testimonies-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* MOMENTS STYLING */
+  .memories .memories-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .memories .memories-grid img {
+    margin-left: 25px;
+    max-width: 100vw;
+  }
+
+  /* FOOTER STYLING */
+  footer .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  footer .footer-grid h2 {
+    font-size: 20px;
+  }
+
+  /* ABOUT STYLING */
+  .my-works h1 {
+    font-size: 22px;
+  }
+
+  .about-me .about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* PROJECT STYLING */
+  .my-works .project-grid .project-desc {
+    text-align: center;
+  }
+
+  .my-works .project-grid .project-desc h2 {
+    font-size: 22px;
+  }
 }
