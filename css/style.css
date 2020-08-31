@@ -40,8 +40,9 @@ header {
 
 #navbar {
   background-color: var(--bg-color);
-  height: 70px;
   max-width: 100%;
+  height: auto;
+  color: var(--text-color);
 }
 
 .navbar-container {
@@ -51,11 +52,15 @@ header {
   max-width: 80%;
 }
 
-#navbar #logo img {
-  color: var(--text-color);
+#navbar .openMenu {
+  font-size: 2rem;
+  color: #ffe4c4;
+  margin: 20px;
+  cursor: pointer;
+  display: none;
 }
 
-#navbar .nav-item ul {
+#navbar .nav-item {
   display: flex;
   margin: 20px;
 }
@@ -72,8 +77,15 @@ header {
   font-family: var(--heading-font-family);
   font-size: var(--heading-font-size);
   text-decoration: none;
-  padding: 65px;
+  padding: 35px;
   color: var(--text-color);
+}
+
+#navbar .nav-item .closeMenu {
+  font-size: 2rem;
+  color: #ffe4c4;
+  cursor: pointer;
+  display: none;
 }
 
 #navbar .nav-item a:hover {
@@ -141,7 +153,7 @@ header {
   padding: 25px;
 }
 
-.services .service-grid .web-dev h1 {
+.services .service-grid .web-dev h2 {
   font-family: var(--heading-font-family);
   font-size: 24px;
 }
@@ -154,7 +166,7 @@ header {
   padding: 25px;
 }
 
-.services .service-grid .web-hosting h1 {
+.services .service-grid .web-hosting h2 {
   font-family: var(--heading-font-family);
   font-size: 22px;
 }
@@ -515,13 +527,13 @@ footer .copyright {
   /* HOME STYLING */
   /* NAVBAR STYLING */
   #navbar .navbar-container .nav-item a {
-    padding: 35px;
+    padding: 20px;
   }
 
   /* SHOWCASE STYLING */
   .showcase {
     background: url(../assets/showcase.jpg) no-repeat center center/cover;
-    height: 40vh;
+    height: 80vh;
     background-attachment: fixed;
     background-size: cover;
   }
@@ -533,11 +545,24 @@ footer .copyright {
   }
 
   /* ABOUT STYLING */
+  .about-me h2 {
+    margin-top: 20px;
+  }
+
   .about-me .about-me-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 10px auto;
+    margin: 20px auto;
     max-width: 80%;
+  }
+
+  /* PROJECT STYLING */
+  .my-works h1 {
+    margin-top: 10px;
+  }
+
+  .my-works .project .project-grid .project-image {
+    margin: auto 0;
   }
 }
 
@@ -553,6 +578,11 @@ footer .copyright {
 
   /* HOME STYLING */
   /* SHOWCASE STYLING */
+  .showcase {
+    background: url(../assets/showcase.jpg) no-repeat center/cover;
+    height: 80vh;
+  }
+
   .showcase .showcase-content {
     padding-top: 120px;
   }
@@ -560,6 +590,17 @@ footer .copyright {
   .memories .memories-grid img {
     max-width: 200px;
     max-height: 200px;
+  }
+
+  /* TESTIMONIES STYLING */
+  .testimonies .testimonies-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .testimonies .testimonies-grid .test {
+    margin: 15px auto;
+    max-width: 70%;
   }
 
   /* ABOUT STYLING */
@@ -590,32 +631,171 @@ footer .copyright {
   }
 }
 
+@media (max-width:600px) {
+
+  /* HOME STYLING */
+  /* NAVBAR STYLING */
+  #navbar .navbar-container {
+    margin: auto;
+    max-width: 90%;
+  }
+
+  #navbar .nav-item {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: var(--bg-color);
+    transition: top 1s ease;
+    display: none;
+  }
+
+  #navbar .nav-item li {
+    padding: 12px;
+  }
+
+  #navbar .nav-item .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
+  #navbar .openMenu {
+    display: block;
+  }
+
+  #navbar .navbar-container .nav-item a {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  /* SHOWCASE STYLING */
+  .showcase {
+    background: url(../assets/showcase.jpg) no-repeat center center/cover;
+    height: 50vh;
+  }
+
+  .showcase .showcase-content {
+    padding-top: 160px;
+  }
+
+  .showcase .showcase-content h1 {
+    font-size: 30px;
+  }
+
+  /* SERVICES STYLING */
+  .services .service-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* SKILLS STYLING */
+  .skills .skills-grid {
+    margin: auto;
+  }
+
+  /* MEMORIES STYLING */
+  .memories .memories-grid div {
+    margin: auto;
+    max-width: 90%;
+  }
+
+  .memories .memories-grid img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  /* FOOTER STYLING */
+  footer .footer-grid h2 {
+    font-size: 18px;
+  }
+
+  /* ABOUT STYLING */
+  .about-me .about-me-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-me .about-me-grid .my-image {
+    margin: 20px auto;
+    max-width: 90%;
+  }
+}
+
 /* MOBILE VIEW */
 @media (max-width:420px) {
 
   /* HOME STYLING */
   /* NAVBAR STYLING */
+  #navbar .navbar-container {
+    margin: auto;
+    max-width: 90%;
+  }
+
+  #navbar .nav-item {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: var(--bg-color);
+    transition: top 1s ease;
+    display: none;
+  }
+
+  #navbar .nav-item li {
+    padding: 12px;
+  }
+
+  #navbar .nav-item .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
+  #navbar .openMenu {
+    display: block;
+  }
+
   #navbar .navbar-container .nav-item a {
     padding: 5px;
   }
 
   /* SHOWCASE STYLING */
+  .showcase {
+    background: url(../assets/showcase.jpg) no-repeat center center/cover;
+    height: 80vh;
+  }
+
   .showcase .showcase-content {
-    padding-top: 70px;
+    padding-top: 130px;
   }
 
   .showcase .showcase-content h1 {
-    font-size: 28px;
+    font-size: 23px;
   }
 
   .showcase .showcase-content p {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
   }
 
   /* SERVICES STYLING */
   .services .services-header {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .services .service-grid {
@@ -625,8 +805,12 @@ footer .copyright {
     padding: 20px;
   }
 
-  .services .service-grid h1 {
-    font-size: 22px;
+  .services .service-grid h2 {
+    font-size: 16px;
+  }
+
+  .services .service-grid p {
+    font-size: 17px;
   }
 
   /* STATS & CERT STYLING */
@@ -664,16 +848,30 @@ footer .copyright {
     grid-template-columns: 1fr;
   }
 
+  .testimonies .testimonies-grid .test h2 {
+    font-size: 22px;
+  }
+
+  .testimonies .testimonies-grid .test p {
+    font-size: 17px;
+  }
+
   /* MOMENTS STYLING */
   .memories .memories-grid {
     display: grid;
     grid-template-columns: 1fr;
   }
 
-  .memories .memories-grid img {
-    margin-left: 25px;
-    max-width: 100vw;
+  .memories .memories-grid div {
+    margin: auto;
+    max-width: 80%;
   }
+
+  .memories .memories-grid img {
+    max-width: 280px;
+    max-height: 280px;
+  }
+
 
   /* FOOTER STYLING */
   footer .footer-grid {
@@ -682,12 +880,17 @@ footer .copyright {
   }
 
   footer .footer-grid h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   /* ABOUT STYLING */
   .my-works h1 {
+    margin-top: 20px;
     font-size: 22px;
+  }
+
+  .about-me h2 {
+    margin-top: 30px;
   }
 
   .about-me .about-me-grid {
@@ -702,5 +905,51 @@ footer .copyright {
 
   .my-works .project-grid .project-desc h2 {
     font-size: 22px;
+  }
+}
+
+/* SMALLER MOBILE */
+@media (max-width:360px) {
+
+  /* SHOWCASE STYLING */
+  .showcase {
+    background: url(../assets/showcase.jpg) no-repeat center center/cover;
+    height: 60vh;
+  }
+
+  /* SERVICES STYLING */
+  .services .services-header {
+    font-size: 22px;
+  }
+
+  .services .service-grid h2 {
+    font-size: 20px;
+  }
+
+  /* MEMORIES STYLING */
+  .memories .memories-grid div {
+    margin: auto;
+    max-width: 70%;
+  }
+
+  .memories .memories-grid img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  /* ABOUT STYLING */
+  .about-me .about-me-grid .my-image {
+    margin: auto;
+    max-width: 80%;
+  }
+
+  .about-me .about-me-grid .my-image img {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  /* PROJECTS STYLING */
+  .my-works .project .project-grid {
+    margin: 15px auto;
   }
 }

@@ -12,83 +12,82 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-  <!-- NAVBAR SECTION -->
-  <header>
-    <nav id="navbar">
-      <div class="navbar-container">
-        <!-- MY LOGO -->
-        <div id="logo"><img src="./assets/logo.png" alt="My Logo"></div>
-        <!-- NAVBAR ITEMS -->
-        <div class="nav-item">
-          <ul>
-            <li><a class="nav-link" href="./index.html">Home</a></li>
-            <li><a class="nav-link" href="./about.html">About</a></li>
-            <li><a class="nav-link" href="./project.html">Projects</a></li>
-            <li><a class="nav-link-active" href="./contact.html">Contact</a></li>
-          </ul>
+<!-- NAVBAR SECTION -->
+<header>
+  <nav id="navbar">
+    <div class="navbar-container">
+      <!-- MY LOGO -->
+      <div id="logo"><img src="./assets/logo.png" alt="My Logo"></div>
+      <div class="openMenu"><i class="fas fa-bars"></i></div>
+      <!-- NAVBAR ITEMS -->
+      <ul class="nav-item">
+        <li><a class="nav-link" href="./index.html">Home</a></li>
+        <li><a class="nav-link" href="./about.html">About</a></li>
+        <li><a class="nav-link" href="./project.html">Projects</a></li>
+        <li><a class="nav-link-active" href="./contact.html">Contact</a></li>
+        <div class="closeMenu"><i class="fas fa-times"></i></div>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<section class="contact-me">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <form name="name" netlify>
+      <div class="name">
+        <label for="name">Name</label> <br>
+        <input type="text" name="name" placeholder="Your Name">
+      </div>
+      <div class="name">
+        <label for="email">Email</label> <br>
+        <input type="email" name="name" placeholder="Your Email">
+      </div>
+      <div class="talk">
+        <label for="text">Message</label> <br>
+        <textarea name="text" cols="25" rows="5"></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="message">
+        <h2>Message Me</h2>
+        <div>
+          <i class="fas fa-phone"></i> 0708 215 8660
+        </div>
+        <div>
+          <i class="fas fa-mail-bulk"></i> arimoroolamilekan1@gmail.com
+        </div>
+        <div class="social-icon">
+          <span>
+            <a href="https://www.linkedin.com/in/arimoroolamilekan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/arimoro_olamilekan/?hl=en" target="_blank"><i
+                class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/ArimoroOlamile5" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/Lexitar32" target="_blank"><i class="fab fa-github"></i></a>
+          </span>
         </div>
       </div>
-    </nav>
-  </header>
-
-  <section class="contact-me">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form name="name" netlify>
-        <div class="name">
-          <label for="name">Name</label> <br>
-          <input type="text" name="name" placeholder="Your Name">
-        </div>
-        <div class="name">
-          <label for="email">Email</label> <br>
-          <input type="email" name="name" placeholder="Your Email">
-        </div>
-        <div class="talk">
-          <label for="text">Message</label> <br>
-          <textarea name="text" cols="25" rows="5"></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER SECTION -->
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="message">
-          <h2>Message Me</h2>
-          <div>
-            <i class="fas fa-phone"></i> 0708 215 8660
-          </div>
-          <div>
-            <i class="fas fa-mail-bulk"></i> arimoroolamilekan1@gmail.com
-          </div>
-          <div class="social-icon">
-            <span>
-              <a href="https://www.linkedin.com/in/arimoroolamilekan/" target="_blank"><i
-                  class="fab fa-linkedin"></i></a>
-              <a href="https://www.instagram.com/arimoro_olamilekan/?hl=en" target="_blank"><i
-                  class="fab fa-instagram"></i></a>
-              <a href="https://twitter.com/ArimoroOlamile5" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="https://github.com/Lexitar32" target="_blank"><i class="fab fa-github"></i></a>
-            </span>
-          </div>
-        </div>
-        <div class="subscribe">
-          <form name="name" netlify>
-            <h2>Subscribe to my newsletter</h2>
-            <input type="email" name="email" placeholder="Your Email">
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
+      <div class="subscribe">
+        <form name="name" netlify>
+          <h2>Subscribe to my newsletter</h2>
+          <input type="email" name="email" placeholder="Your Email">
+          <button type="submit">Subscribe</button>
+        </form>
       </div>
-      <hr>
-      <p class="copyright">Arimoro Olamilekan Ezekiel &copy; 2020.</p>
     </div>
-  </footer>
+    <hr>
+    <p class="copyright">Arimoro Olamilekan Ezekiel &copy; 2020.</p>
+  </div>
+</footer>
 
+<script src="./index.js"></script>
 </body>
 
 </html>
