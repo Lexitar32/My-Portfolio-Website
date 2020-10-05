@@ -233,6 +233,10 @@ header {
 }
 
 /* SKILLS SECTION */
+.skills {
+  background: url(../assets/skill-bg.jpg) no-repeat center center/cover;
+}
+
 .skills h1 {
   font-family: var(--heading-font-family);
   font-weight: bold;
@@ -251,15 +255,21 @@ header {
   margin: 30px;
   padding: 50px;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .skills .skills-grid .html {
   padding: 20px;
 }
 
+.skills .skills-grid i {
+  font-size: 50px;
+}
+
 /* TESTIMONIES STYLING */
 .testimonies {
   background-color: var(--bg-color);
+  margin-bottom: 5px;
 }
 
 .testimonies h1 {
@@ -380,6 +390,11 @@ footer .footer-grid .subscribe button {
   color: var(--bg-color);
 }
 
+footer .footer-grid .subscribe button:hover {
+  background: #ffe4c4;
+  color: var(--bg-color);
+}
+
 footer .copyright {
   font-family: var(--body-font-family);
   color: #ffe4c4;
@@ -392,6 +407,7 @@ footer .copyright {
   font-family: var(--heading-font-family);
   text-align: center;
   color: var(--bg-color);
+  padding-top: 12px;
 }
 
 .about-me .about-me-grid {
@@ -501,11 +517,17 @@ footer .copyright {
 }
 
 .contact-me form input {
-  padding: 6px;
+  padding: 10px;
+  border: none;
+  width: 30vw;
 }
 
 .contact-me form .name {
   padding: 8px;
+}
+
+.contact-me form textarea {
+  width: 30vw;
 }
 
 .contact-me form button {
@@ -552,8 +574,13 @@ footer .copyright {
   .about-me .about-me-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
     margin: 20px auto;
     max-width: 80%;
+  }
+
+  .about-me .about-me-grid img {
+    margin-top: 30px;
   }
 
   /* PROJECT STYLING */
@@ -606,9 +633,17 @@ footer .copyright {
   /* ABOUT STYLING */
   .about-me .about-me-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     margin: 10px auto;
     max-width: 100%;
+  }
+
+  .about-me .about-me-grid .my-image {
+    margin: auto;
+  }
+
+  .about-me .about-me-grid img {
+    width: 100%;
   }
 
   .about-me .about-me-grid .my-image {
@@ -727,10 +762,25 @@ footer .copyright {
     margin: 20px auto;
     max-width: 90%;
   }
+  
+  /* CONTACT US STYLING */
+  .contact-me form input {
+    padding: 10px;
+    border: none;
+    width: 70vw;
+  }
+
+  .contact-me form .name {
+    padding: 8px;
+  }
+
+  .contact-me form textarea {
+    width: 70vw;
+  }
 }
 
 /* MOBILE VIEW */
-@media (max-width:420px) {
+@media (max-width:425px) {
 
   /* HOME STYLING */
   /* NAVBAR STYLING */
@@ -791,6 +841,7 @@ footer .copyright {
   .showcase .showcase-content p {
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 100px;
   }
 
   /* SERVICES STYLING */
@@ -906,6 +957,21 @@ footer .copyright {
   .my-works .project-grid .project-desc h2 {
     font-size: 22px;
   }
+
+  /* CONTACT US STYLING */
+  .contact-me form input {
+    padding: 10px;
+    border: none;
+    width: 50vw;
+  }
+
+  .contact-me form .name {
+    padding: 8px;
+  }
+
+  .contact-me form textarea {
+    width: 50vw;
+  }
 }
 
 /* SMALLER MOBILE */
@@ -915,6 +981,13 @@ footer .copyright {
   .showcase {
     background: url(../assets/showcase.jpg) no-repeat center center/cover;
     height: 60vh;
+  }
+
+  .showcase .showcase-content p {
+    font-family: var(--body-font-family);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 200px;
   }
 
   /* SERVICES STYLING */
