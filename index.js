@@ -36,4 +36,4 @@ function autoWriter() {
 
 setInterval(() => {
   autoWriter();
-}, 800);
+}, 100);
